@@ -33,8 +33,6 @@ Of them, ~100 are in "waiting for payment" state (the concerns are somewhat mixe
 ~50 tasks are overdue.
 
 
-
-
 ### Difficulty claims
 Claims are made on basis of resolution timings etc., but do not seem to account for the nature of highly atomized freelance work.
 In an open bounty system, it does not seem unlikely that a lot of underqualified contractors might attempt a solution.
@@ -72,6 +70,7 @@ SWE Manager:
 - A strong bias for the eventual selected solution is likely since the repository is open and was incorporated into LLM data;
 - Total task dataset "value" (and therefore max contribution) is for some reason higher than IC SWE tasks - 60/40;
 - Somehow a price tag of the task is awarded to the manager, while in fact that sum was spent by the manager (and then some);
+- TODO: It need further investigation, but it wouldn't be sane to compare working and nonworking solutions (or non-solutions). Need to see if managerial task account for this. From the paper: between "wait" non-solution proposal vs proposal with actual solution with code, "obviously" an actual solution should be evaluated?
 - Need to see if there is bias for "later" solutions, which are logically might seem more likely to be accepted for a long running issue;
 - From the dataset it seems that only a single price is given, e.g. for task #14958 only the "final" price is awarded. That means that long running issues award more just by default. See if proposals are at least "mixed" before evaluation.
 
