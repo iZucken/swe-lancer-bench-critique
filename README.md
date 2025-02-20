@@ -27,6 +27,22 @@ Analysis of the work should account for amount of paid work done to produce the 
 
 
 
+There seems to be an undocumented by the papers issue with how the tasks are structured.
+
+See sample issue [#14268](https://github.com/openai/SWELancer-Benchmark/blob/08b5d3dffd7beeae408033a059805adf569e9460/issues/14268/bug_reintroduce.patch) bug patch:
+```diff
++    // Intentionally use raw character count instead of HTML-converted length
++    const validateCommentLength = (text: string) => {
++        // This will only check raw character count, not HTML-converted length
++        return text.length <= CONST.MAX_COMMENT_LENGTH;
++    };
+```
+
+[Consult the original issue thread](https://github.com/Expensify/App/issues/14268) - the actual [accepted solution](https://github.com/Expensify/App/pull/15501/files) diff is nothing like what benchmark contains.
+
+This seems to be a common issue as noted by people on [hn thread](https://news.ycombinator.com/item?id=43099268)
+
+
 ### Reward system
 At the time of writing, source project has ~450 issues marked as "external" (issues for which bounties are paid to successful external contractors).
 Of them, ~100 are in "waiting for payment" state (the concerns are somewhat mixed) - should look into whom and how much the company actually pays.
