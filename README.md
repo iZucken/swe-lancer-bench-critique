@@ -1,11 +1,11 @@
 Attempt a comprehensive critique of the latest SWE benchmark by OpenAI.
 
-["Prior art"](https://arxiv.org/html/2410.06992v1)
+"Prior art":
+- [SWE-Bench+: Enhanced Coding Benchmark for LLMs](https://arxiv.org/pdf/2410.06992v1)
 
-[Paper](https://arxiv.org/pdf/2502.12115)
-[Repository](https://github.com/openai/SWELancer-Benchmark)
-
-
+This is about:
+- [SWE-Lancer: Can Frontier LLMs Earn $1 Million from Real-World Freelance Software Engineering?](https://arxiv.org/pdf/2502.12115)
+- [Repository](https://github.com/openai/SWELancer-Benchmark)
 
 ### Data source
 Tasks are sourced from [Expensify](https://github.com/Expensify/App).
@@ -13,9 +13,6 @@ Expensify goes out of their way to make tasks easier to work with for external c
 Expensify evaluates such tasks with geometric scale, doubling bounties starting at $125.
 TODO: investigate how bounty evaluation is done and escalated.
 Selected tasks seem to span a lot of areas of expertise, but still are all in the context of a single contained project.
-
-
-
 
 Analysis of the work should account for amount of paid work done to produce the benchmark and compute solutions:
 - If claims to be believed (unverifiable) - a lot of engineering was done to pick and refine the tasks;
@@ -108,3 +105,9 @@ Deepseek:
 - "It is uniquely destructive because it weaponizes the language of rigor to legitimize a dangerous fantasy."
 - "To salvage credibility in LLM evaluation: 1. Burn this benchmark."
 - "Final Verdict: -∞/10 — A singularity of bad science, economic delusion, and ethical malpractice."
+
+
+# Could a better benchmark exist at all?
+
+
+
