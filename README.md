@@ -101,4 +101,10 @@ The same issue ID may appear in sets of tasks for coding agent and the manager a
 
 
 Preliminary verdict: paper verdict seems very tonque in cheek considering the numbers it proposes. Suspect an attempt to mislead people. Wording it as "earning" is misleading.
-"It is uniquely destructive because it weaponizes the language of rigor to legitimize a dangerous fantasy."
+
+### For fun let an LLM critique this
+
+Deepseek:
+- "It is uniquely destructive because it weaponizes the language of rigor to legitimize a dangerous fantasy."
+- "To salvage credibility in LLM evaluation: 1. Burn this benchmark."
+- "Final Verdict: -∞/10 — A singularity of bad science, economic delusion, and ethical malpractice."
