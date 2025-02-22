@@ -82,6 +82,7 @@ Benchmark seems to inappropriately mix scorings for different kinds of work:
 - TODO: Should check integration testing methodology, suspected that only specific integration tests are run for validation which does not seem sufficient at all, invalidating all results.
 
 #### SWE Manager issues
+- verbatim "SWE Manager tasks require the model to choose between 4-5 proposals" - that means that a random guess would score 20-25%; we observe up to 30% success rate.
 - An big assumtion is made that prior human managerial choices are a good ground truth. While automated tests can be made for programming tasks, nothing of sort is done for testing good managerial or architectural decisions.
 - A strong bias for the eventual selected solution is likely since the repository is open and was incorporated into LLM data;
 - Total task dataset "value" (and therefore max contribution) is for some reason higher than IC SWE tasks - 60/40;
