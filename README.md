@@ -76,6 +76,7 @@ Some unclarified analysis of contamination effect is given in appendix 2, with s
 Benchmark seems to inappropriately mix scorings for different kinds of work:
 - IC SWE tasks which are actual programming tasks;
 - SWE Manager tasks which are "soft" tasks;
+- One extra point of consideration: if we evaluate the model for solving such tasks, the solution could be theoretically acquired supposedly almost instantly (compared to a human process), and therefore the tasks would never escalate to huge bounties in the first place.
 
 #### IC SWE scoring issues
 - Target project uses a geometric bounty payout scaling (doubles starting at $125) which is very specific and does not seem reasonable as a baseline for this kind of evaluation. TODO: How exactly the tasks scale should be investigated - surface level checks show that trivial issues can escalate to thousands of dollars in bounties.
