@@ -101,3 +101,4 @@ The same issue ID may appear in sets of tasks for coding agent and the manager a
 
 
 Preliminary verdict: paper verdict seems very tonque in cheek considering the numbers it proposes. Suspect an attempt to mislead people. Wording it as "earning" is misleading.
+"It is uniquely destructive because it weaponizes the language of rigor to legitimize a dangerous fantasy."
