@@ -21,7 +21,7 @@ Analysis of the work should account for amount of paid work done to produce the 
 - If claims to be believed (unverifiable) - a lot of engineering was done to pick and refine the tasks;
 - A lot of managerial and other work already implicitly done by repository owners even before that;
 - Does not account for compute/training costs;
-- No mind at all is paid for failed tasks, as if managing invalid/falied work is somehow free;
+- No mind at all is paid for failed tasks, as if managing invalid/falied work is somehow free. A 40% success rate worker would be fired;
 - See further section on managerial work evaluation - bulk of "earnings" is made with a strange method;
 - See [justifiable issues](https://github.com/openai/SWELancer-Benchmark/issues/13)
 
