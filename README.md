@@ -7,7 +7,7 @@ Attempt a comprehensive critique of the latest SWE benchmark by OpenAI.
 
 
 
-### Daat source
+### Data source
 Tasks are sourced from [Expensify](https://github.com/Expensify/App).
 Expensify goes out of their way to make tasks easier to work with for external contractors.
 Expensify evaluates such tasks with geometric scale, doubling bounties starting at $125.
@@ -77,11 +77,11 @@ Benchmark seems to inappropriately mix scorings for different kinds of work:
 - IC SWE tasks which are actual programming tasks;
 - SWE Manager tasks which are "soft" tasks;
 
-IC SWE scoring:
+#### IC SWE scoring issues
 - Target project uses a geometric bounty payout scaling (doubles starting at $125) which is very specific and does not seem reasonable as a baseline for this kind of evaluation. TODO: How exactly the tasks scale should be investigated - surface level checks show that trivial issues can escalate to thousands of dollars in bounties.
 - TODO: Should check integration testing methodology, suspected that only specific integration tests are run for validation which does not seem sufficient at all, invalidating all results.
 
-SWE Manager:
+#### SWE Manager issues
 - An big assumtion is made that prior human managerial choices are a good ground truth. While automated tests can be made for programming tasks, nothing of sort is done for testing good managerial or architectural decisions.
 - A strong bias for the eventual selected solution is likely since the repository is open and was incorporated into LLM data;
 - Total task dataset "value" (and therefore max contribution) is for some reason higher than IC SWE tasks - 60/40;
@@ -90,7 +90,9 @@ SWE Manager:
 - Need to see if there is bias for "later" solutions, which are logically might seem more likely to be accepted for a long running issue;
 - From the dataset it seems that only a single price is given, e.g. for task #14958 only the "final" price is awarded. That means that long running issues award more just by default. See if proposals are at least "mixed" before evaluation.
 
+### Double counting
 
+The same issue ID may appear in sets of tasks for coding agent and the manager agent. That could drastically inflate the numbers, since "simple" tasks can now "award" money twice and further inflate scores.
 
 ### Conclusion
 
