@@ -83,10 +83,10 @@ Benchmark seems to inappropriately mix scorings for different kinds of work:
 
 #### SWE Manager issues
 - verbatim "SWE Manager tasks require the model to choose between 4-5 proposals" - that means that a random guess would score 20-25%; we observe up to 30% success rate.
-- An big assumtion is made that prior human managerial choices are a good ground truth. While automated tests can be made for programming tasks, nothing of sort is done for testing good managerial or architectural decisions.
+- An big assumtion is made that prior human managerial choices are a good ground truth. While automated tests can be made for programming tasks, nothing of sort is done for testing good managerial or architectural decisions. "Conflates retrospective alignment with decision-making quality".
 - A strong bias for the eventual selected solution is likely since the repository is open and was incorporated into LLM data;
 - Total task dataset "value" (and therefore max contribution) is for some reason higher than IC SWE tasks - 60/40;
-- Somehow a price tag of the task is awarded to the manager, while in fact that sum was spent by the manager (and then some);
+- Somehow a price tag of the task is awarded to the manager, while in fact that sum was spent by the manager (and then some - some tasks spend more than stated amount actually, to award other participants for reporting bugs and adding extra tests, and sometimes other contributions - and sometimes in nontrivial amounts);
 - TODO: It need further investigation, but it wouldn't be sane to compare working and nonworking solutions (or non-solutions). Need to see if managerial task account for this. From the paper: between "wait" non-solution proposal vs proposal with actual solution with code, "obviously" an actual solution should be evaluated?
 - Need to see if there is bias for "later" solutions, which are logically might seem more likely to be accepted for a long running issue;
 - From the dataset it seems that only a single price is given, e.g. for task #14958 only the "final" price is awarded. That means that long running issues award more just by default. See if proposals are at least "mixed" before evaluation.
@@ -98,4 +98,4 @@ The same issue ID may appear in sets of tasks for coding agent and the manager a
 ### Conclusion
 
 
-Preliminary verdict: paper verdict seems very tonque in cheek considering the numbers it proposes. Suspect an attempt to mislead people.
+Preliminary verdict: paper verdict seems very tonque in cheek considering the numbers it proposes. Suspect an attempt to mislead people. Wording it as "earning" is misleading.
