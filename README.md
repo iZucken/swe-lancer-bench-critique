@@ -79,6 +79,7 @@ Benchmark seems to inappropriately mix scorings for different kinds of work:
 - One extra point of consideration: if we evaluate the model for solving such tasks, the solution could be theoretically acquired supposedly almost instantly (compared to a human process), and therefore the tasks would never escalate to huge bounties in the first place.
 
 #### IC SWE scoring issues
+- As seen from an example bug, it is accompanied by a comment that clearly states the bug adjacent. This is not typical for real bugs. There are even stronger examples linked in related discussions.
 - Target project uses a geometric bounty payout scaling (doubles starting at $125) which is very specific and does not seem reasonable as a baseline for this kind of evaluation. TODO: How exactly the tasks scale should be investigated - surface level checks show that trivial issues can escalate to thousands of dollars in bounties.
 - TODO: Should check integration testing methodology, suspected that only specific integration tests are run for validation which does not seem sufficient at all, invalidating all results.
 
