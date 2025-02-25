@@ -42,6 +42,11 @@ See sample issue [#14268](https://github.com/openai/SWELancer-Benchmark/blob/08b
 This seems to be a common issue as noted by people on [hn thread](https://news.ycombinator.com/item?id=43099268)
 
 
+### Published dataset
+
+One more suspicious thing I see is that the paper states full dataset consists of ~1500 tasks estimated $1000000, while published set ("diamond") is only ~500 tasks, but worth half of that, so every task in diamond set is worth on average $1000, and every task in unpublished set is worth on average $500. Reported success rate does not seem to correlate.
+
+
 ### Reward system
 At the time of writing, source project has ~450 issues marked as "external" (issues for which bounties are paid to successful external contractors).
 Of them, ~100 are in "waiting for payment" state (the concerns are somewhat mixed) - should look into whom and how much the company actually pays.
