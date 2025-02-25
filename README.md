@@ -22,7 +22,9 @@ Analysis of the work should account for amount of paid work done to produce the 
 - See further section on managerial work evaluation - bulk of "earnings" is made with a strange method;
 - See [justifiable issues](https://github.com/openai/SWELancer-Benchmark/issues/13)
 
-
+Suspect that sourcer of the data is complicit, by how results [are presented](https://use.expensify.com/blog/expensify-powers-openai-swe-lancer-project):
+> Surprisingly, LLMs performed better at management tasks than direct coding, suggesting that AI may first integrate into software teams as an advisor rather than a coder.
+See further why claims might be suspect. TODO: see if they are related.
 
 There seems to be an undocumented by the papers issue with how the tasks are structured.
 
