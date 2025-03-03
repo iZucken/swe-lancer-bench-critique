@@ -7,6 +7,11 @@ This is about:
 - [SWE-Lancer: Can Frontier LLMs Earn $1 Million from Real-World Freelance Software Engineering?](https://arxiv.org/pdf/2502.12115)
 - [Repository](https://github.com/openai/SWELancer-Benchmark)
 
+### What is SWE
+
+It is generally expected from SWE to be able to [Make It Work, Make It Right, Make It Fast](https://wiki.c2.com/?MakeItWorkMakeItRightMakeItFast).
+An integration test that only checks if the feature seems to work as intended is not enough to address all of these aspects of SWE.
+
 ### Data source
 Tasks are sourced from [Expensify](https://github.com/Expensify/App).
 Expensify goes out of their way to make tasks easier to work with for external contractors.
