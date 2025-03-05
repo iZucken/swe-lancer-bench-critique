@@ -1,4 +1,4 @@
-Attempt a comprehensive critique of the latest SWE benchmark by OpenAI.
+# SWE-Lancer benchmark critique
 
 "Prior art":
 - [SWE-Bench+: Enhanced Coding Benchmark for LLMs](https://arxiv.org/pdf/2410.06992v1)
@@ -91,6 +91,7 @@ Benchmark seems to inappropriately mix scorings for different kinds of work:
 - As seen from an example bug, it is accompanied by a comment that clearly states the bug adjacent. This is not typical for real bugs. There are even stronger examples linked in related discussions.
 - Target project uses a geometric bounty payout scaling (doubles starting at $125) which is very specific and does not seem reasonable as a baseline for this kind of evaluation. TODO: How exactly the tasks scale should be investigated - surface level checks show that trivial issues can escalate to thousands of dollars in bounties.
 - TODO: Should check integration testing methodology, suspected that only specific integration tests are run for validation which does not seem sufficient at all, invalidating all results.
+- Under original repository, discovery and testing are also parts of the reward structure. The benchmarking method ignores this.
 
 #### SWE Manager issues
 - verbatim "SWE Manager tasks require the model to choose between 4-5 proposals" - that means that a random guess would score 20-25%; we observe up to 30% success rate.
