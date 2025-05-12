@@ -57,6 +57,7 @@ At the time of writing, source project has ~450 issues marked as "external" (iss
 Of them, ~100 are in "waiting for payment" state (the concerns are somewhat mixed) - should look into whom and how much the company actually pays.
 ~50 tasks are overdue.
 
+We need to carefully address variance in dataset task rewards. Since iirc rewards scale from 250 to 30000, a few "lucky" upper bound solutions can heavily skew the overall "earning", making the solver appear much more competent. At some level of success it can be completely attributed to variance and mixing in of quiz questions.
 
 ### Difficulty claims
 Claims are made on basis of resolution timings etc., but do not seem to account for the nature of highly atomized freelance work.
